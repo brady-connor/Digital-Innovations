@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brady Connor — Business &amp; Data Analytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF; --ink:#0A0A0A; --muted:#6B6B6B; --hair:#E5E5E5; --band:#0A0A0A; --band-ink:#FFFFFF;
+    padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){ --bg:#0A0A0A; --ink:#F4F4F4; --muted:#9A9A9A; --hair:#262626; --band:#F4F4F4; --band-ink:#0A0A0A; }
+  }
+  :root[data-theme="dark"]{ --bg:#0A0A0A; --ink:#F4F4F4; --muted:#9A9A9A; --hair:#262626; --band:#F4F4F4; --band-ink:#0A0A0A; }
+
+  *{box-sizing:border-box;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+
+  .wrap{max-width:960px;margin:0 auto;padding:0 28px;}
+
+  nav.top{display:flex;justify-content:space-between;align-items:center;padding:28px 0;flex-wrap:wrap;gap:16px;}
+  nav.top .logo{font-family:'Archivo',sans-serif;font-weight:700;font-size:1rem;}
+  nav.top .links{display:flex;gap:28px;font-size:0.9rem;color:var(--muted);}
+  nav.top .links a{color:var(--muted);text-decoration:none;}
+  nav.top .links a:hover{color:var(--ink);}
+  .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);border-radius:999px;padding:10px 20px;font-size:0.85rem;font-weight:500;color:var(--ink);text-decoration:none;white-space:nowrap;}
+  .pill:hover{background:var(--ink);color:var(--bg);}
+
+  header.hero{padding:36px 0 64px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:end;}
+  header.hero h1{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(2.6rem,6.4vw,4.4rem);line-height:0.98;letter-spacing:-0.02em;margin:0;}
+  .hero-side p{color:var(--muted);font-size:0.98rem;margin:0 0 24px;max-width:36ch;}
+  @media (max-width:720px){ header.hero{grid-template-columns:1fr;} }
+
+  .band{background:var(--band);color:var(--band-ink);padding:20px 0;overflow-x:auto;}
+  .band .row{display:flex;gap:36px;white-space:nowrap;font-family:'Archivo',sans-serif;font-weight:700;font-size:1.05rem;width:max-content;margin:0 auto;padding:0 28px;}
+  .band .row span{opacity:0.55;}
+
+  section{padding:56px 0;border-bottom:1px solid var(--hair);}
+  section:last-of-type{border-bottom:none;}
+  h2{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(1.6rem,3.5vw,2.1rem);margin:0 0 32px;letter-spacing:-0.01em;}
+
+  .about p{max-width:62ch;color:var(--ink);font-size:1.02rem;}
+
+  .item{display:grid;grid-template-columns:160px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--hair);}
+  .item:first-of-type{border-top:none;}
+  .item .when{color:var(--muted);font-size:0.85rem;padding-top:3px;}
+  .item h3{margin:0 0 4px;font-size:1.05rem;font-weight:700;font-family:'Archivo',sans-serif;}
+  .item .org{color:var(--muted);font-size:0.9rem;margin-bottom:8px;}
+  .item p{margin:0;color:var(--ink);opacity:0.85;font-size:0.95rem;max-width:56ch;}
+  @media (max-width:600px){ .item{grid-template-columns:1fr;gap:6px;} }
+
+  ul.skills{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0;}
+  ul.skills li{font-size:0.88rem;padding:9px 18px;border:1px solid var(--hair);border-radius:999px;color:var(--ink);}
+
+  footer{padding:72px 0 80px;}
+  footer h2{margin-bottom:28px;}
+  footer .actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:28px;}
+  footer .fine{color:var(--muted);font-size:0.85rem;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <nav class="top">
+    <span class="logo">Brady Connor</span>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+    </div>
+    <a class="pill" href="https://claude.ai/artifact/Vt71qTnyT7p9E3suXvbbcG" target="_blank" rel="noopener">Links ↗</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Analytics with an athlete's discipline.</h1>
+    <div class="hero-side">
+      <p>Graduated Simpson College in 2026 with a degree in MIS, now pursuing a Master's in Applied Business Analytics at the University of Arkansas's Walton College. A season-ending injury moved me from the court to tracking the stats that decide games — I bring that same attention to business data and operations.</p>
+      <a class="pill" href="mailto:brady.connor@outlook.com">Get in touch ↘</a>
+    </div>
+  </header>
+</div>
+
+<div class="band">
+  <div class="row">
+    <span>Walton College</span><span>Simpson College</span><span>Depop</span><span>UPS</span><span>City of O'Fallon</span><span>Alpha Tau Omega</span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about">
+      <p>I'm organized and motivated, with a habit of paying attention to what the numbers and the people around me are saying. I've run an independent resale business for two years, kept public pools safe as a lifeguard, and led safety operations for a fraternity chapter — different rooms, same instinct for process and detail.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="item">
+      <div class="when">Aug 2026 – May 2027</div>
+      <div><h3>Master's, Applied Business Analytics</h3><div class="org">University of Arkansas — Sam M. Walton College of Business</div><p>Graduate coursework in applied analytics, working with Anaconda and Microsoft Power BI.</p></div>
+    </div>
+    <div class="item">
+      <div class="when">Aug 2024 – May 2026</div>
+      <div><h3>B.A., Management Information Systems</h3><div class="org">Simpson College, management minor</div><p>3.279 GPA. Presidential Scholar, 2024–25 and 2025–26. Dean's List, Fall 2025.</p></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="item">
+      <div class="when">Jan 2024 – present</div>
+      <div><h3>Entrepreneur, online retail</h3><div class="org">Depop</div><p>Run an independent resale business end to end — sourcing, pricing, shipping, and customer communication. Manage delivery routes for efficiency and margin. Maintained a five-star seller rating.</p></div>
+    </div>
+    <div class="item">
+      <div class="when">Feb–Aug 2024, May–Aug 2025</div>
+      <div><h3>Lifeguard</h3><div class="org">City of O'Fallon</div><p>Kept order and safety at public pools, responding quickly under pressure and enforcing facility rules for patrons.</p></div>
+    </div>
+    <div class="item">
+      <div class="when">Jan–Aug 2024</div>
+      <div><h3>Store sales associate</h3><div class="org">The UPS Store</div><p>Handled shipping, packaging, and transactions across domestic and international orders while keeping the workspace organized for the team.</p></div>
+    </div>
+  </section>
+
+  <section id="leadership">
+    <h2>Leadership &amp; athletics</h2>
+    <div class="item">
+      <div class="when">2026</div>
+      <div><h3>Team manager</h3><div class="org">Simpson College Men's Basketball</div><p>Moved into an analytical role with the coaching staff after a season-ending injury, tracking and analyzing game statistics in real time.</p></div>
+    </div>
+    <div class="item">
+      <div class="when">2024 – 2025</div>
+      <div><h3>Varsity forward</h3><div class="org">Simpson College Men's Basketball</div><p>Competed at the varsity level, representing the college with discipline across practices, games, and training.</p></div>
+    </div>
+    <div class="item">
+      <div class="when">Jan–Dec 2025</div>
+      <div><h3>Health and safety executive officer</h3><div class="org">Alpha Tau Omega</div><p>Ran chapter safety inspections, wrote procedures, and trained members to reduce risk across housing operations.</p></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Python</li><li>Excel</li><li>R</li><li>SQL</li><li>Anaconda</li><li>Microsoft Power BI</li><li>Data analysis</li><li>Project management</li><li>Problem solving</li><li>Communication</li><li>Time management</li>
+    </ul>
+  </section>
+
+  <footer>
+    <h2>Let's talk.</h2>
+    <div class="actions">
+      <a class="pill" href="mailto:brady.connor@outlook.com">Email me ↘</a>
+      <a class="pill" href="https://claude.ai/artifact/Vt71qTnyT7p9E3suXvbbcG" target="_blank" rel="noopener">All links ↗</a>
+    </div>
+    <p class="fine">St. Peters, MO · brady.connor@outlook.com · 636-279-9311</p>
+  </footer>
+
+</div>
+
+</body>
+</html>

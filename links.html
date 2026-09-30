@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brady Connor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF; --ink:#0A0A0A; --muted:#6B6B6B; --hair:#E5E5E5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){ --bg:#0A0A0A; --ink:#F4F4F4; --muted:#9A9A9A; --hair:#262626; }
+  }
+  :root[data-theme="dark"]{ --bg:#0A0A0A; --ink:#F4F4F4; --muted:#9A9A9A; --hair:#262626; }
+
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Inter',sans-serif;
+    display:flex; flex-direction:column; align-items:center;
+    padding:calc(56px + env(safe-area-inset-top,0px)) 20px calc(32px + env(safe-area-inset-bottom,0px));
+    min-height:100%;
+  }
+  h1{font-family:'Archivo',sans-serif;font-weight:900;font-size:1.6rem;margin:0 0 6px;text-align:center;letter-spacing:-0.01em;}
+  .role{color:var(--muted);font-size:0.92rem;margin-bottom:16px;text-align:center;}
+  .pitch{color:var(--ink);opacity:0.75;font-size:0.92rem;text-align:center;max-width:340px;margin-bottom:36px;line-height:1.55;}
+  .links{width:100%;max-width:380px;display:flex;flex-direction:column;gap:12px;}
+  .links a{
+    display:flex; align-items:center; justify-content:space-between;
+    border:1px solid var(--hair); border-radius:999px;
+    padding:15px 22px; color:var(--ink); text-decoration:none;
+    font-weight:500; font-size:0.95rem;
+  }
+  .links a:hover, .links a:focus-visible{border-color:var(--ink);}
+  .links a.primary{background:var(--ink);color:var(--bg);border-color:var(--ink);font-family:'Archivo',sans-serif;font-weight:700;}
+  footer{margin-top:auto;padding-top:40px;color:var(--muted);font-size:0.78rem;text-align:center;}
+</style>
+</head>
+<body>
+  <h1>Brady Connor</h1>
+  <div class="role">MIS + Applied Business Analytics</div>
+  <p class="pitch">Simpson College grad, 2026, now pursuing a Master's in Applied Business Analytics at the University of Arkansas's Walton College. Entrepreneur on Depop, team manager tracking stats for Simpson basketball, chasing work in business ops and data analysis.</p>
+
+  <div class="links">
+    <a class="primary" href="https://claude.ai/artifact/EtNKjEDxxQYtcomv4tyVYU" target="_blank" rel="noopener">
+      <span>Portfolio</span><span>↗</span>
+    </a>
+    <a href="https://www.linkedin.com/in/bradyconnor/" target="_blank" rel="noopener">
+      <span>LinkedIn</span><span>↗</span>
+    </a>
+    <a href="https://www.depop.com/cardinalthrifts/" target="_blank" rel="noopener">
+      <span>Depop — Cardinal Thrifts</span><span>↗</span>
+    </a>
+  </div>
+
+  <footer>St. Peters, MO · Simpson College</footer>
+</body>
+</html>
